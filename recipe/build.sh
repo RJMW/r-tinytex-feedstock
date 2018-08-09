@@ -6,3 +6,7 @@ else
   mkdir -p $PREFIX/lib/R/library/tinytex
   mv * $PREFIX/lib/R/library/tinytex
 fi
+if [[ $target_platform =~ linux.* ]] || [[ $target_platform == osx-64 ]]; then
+  $R -e "tinytex::install_tinytex()"
+  cp -R bin/* $PREFIX/bin
+fi
