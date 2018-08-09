@@ -33,6 +33,7 @@ requirements:
 test:
   commands:
     - $R -e "library('tinytex')"                   # [not win]
+    - $R -e "tinytex:::texlive_root()"             # [not win]
     - $R -e "tinytex::tlmgr_search('/framed.sty')" # [not win]
     - which tlmgr                                  # [not win]
     - tlmgr search --global --file "/framed.sty"   # [not win]
