@@ -8,5 +8,6 @@ else
 fi
 if [[ $target_platform =~ linux.* ]] || [[ $target_platform == osx-64 ]]; then
   $R -e "tinytex::install_tinytex()"
-  cp -R bin/* $PREFIX/bin
+  ls
+  ls $PREFIX/bin
 fi
