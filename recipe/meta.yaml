@@ -38,6 +38,7 @@ test:
     - which tlmgr                                  # [not win]
     - tlmgr search --global --file "/framed.sty"   # [not win]
     - "\"%R%\" -e \"library('tinytex')\""          # [win]
+    - $R test.R
 
 about:
   home: https://github.com/yihui/tinytex
