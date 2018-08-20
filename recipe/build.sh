@@ -10,4 +10,5 @@ if [[ $target_platform =~ linux.* ]] || [[ $target_platform == osx-64 ]]; then
   $R -e "tinytex::install_tinytex()"
   ls
   ls $PREFIX/bin
+  $R -e "source('$PREFIX/test.R')"
 fi
