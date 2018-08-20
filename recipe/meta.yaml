@@ -35,7 +35,6 @@ test:
     - $R -e "library('tinytex')"                   # [not win]
     - $R -e "tinytex:::texlive_root()"             # [not win]
     - $R -e "tinytex::tlmgr_search('/framed.sty')" # [not win]
-    - $R -e "source('test.R')"              # [not win]
     - which tlmgr                                  # [not win]
     - tlmgr search --global --file "/framed.sty"   # [not win]
     - "\"%R%\" -e \"library('tinytex')\""          # [win]
