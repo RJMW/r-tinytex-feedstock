@@ -36,7 +36,7 @@ test:
     - $R -e "library('tinytex')"                   # [not win]
     - $R -e "tinytex:::texlive_root()"             # [not win]
     - $R -e "tinytex::tlmgr_search('/framed.sty')" # [not win]
-    - $R -e "source('/Users/travis/miniconda3/pkgs/r-tinytex-0.6-r341h6115d3f_0/info/recipe/test.R')
+    - $R -e "source('/Users/travis/miniconda3/pkgs/r-tinytex-0.6-r341h6115d3f_0/info/recipe/test.R')"
     - which tlmgr                                  # [not win]
     - tlmgr search --global --file "/framed.sty"   # [not win]
     - "\"%R%\" -e \"library('tinytex')\""          # [win]
