@@ -33,8 +33,7 @@ requirements:
 test:
   commands:
     - echo $PWD
-    - $R -e "install.packages(c('rmarkdown', 'knitr', 'installr'), repos='http://cran.us.r-project.org')"
-    - $R -e "installr::install.pandoc()"           # [not win]
+    - $R -e "install.packages(c('rmarkdown', 'knitr'), repos='http://cran.us.r-project.org')"
     - $R -e "library('tinytex')"                   # [not win]
     - $R -e "tinytex:::texlive_root()"             # [not win]
     - $R -e "tinytex::tlmgr_search('/framed.sty')" # [not win]
