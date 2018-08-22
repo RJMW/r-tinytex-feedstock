@@ -24,9 +24,11 @@ build:
 requirements:
   build:
   host:
+    - pandoc
     - r-base
     - r-xfun >=0.3
   run:
+    - pandoc
     - r-base
     - r-xfun >=0.3
 
